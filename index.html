@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -219,7 +220,7 @@
       <script>
         const githubUsername = 'initon';
         async function fetchGithubRepos(username) {
-          const url = `https://api.github.com/users/${username}/repos?sort=updated&per_page=12`;
+          const url = `https://api.github.com/users/${username}/repos?sort=updated&per_page=24`;
           try {
             const response = await fetch(url);
             if (!response.ok) throw new Error('Ошибка загрузки репозиториев');
@@ -245,8 +246,8 @@
           };
 
           const langIcon = languageIcons[repo.language] || '<i class="fas fa-code language-icon" title="Язык программирования"></i>';
-
-          return `
+          if (repo.name != "cv") {
+            return `
       <a href="${repo.html_url}" target="_blank" rel="noopener" class="github-project-card" title="Перейти в репозиторий">
         <h4>${repo.name}</h4>
         <p>${repo.description ? repo.description : 'Описание отсутствует.'}</p>
@@ -257,6 +258,7 @@
         </div>
       </a>
     `;
+        }
         }
 
         async function loadGithubProjects() {
