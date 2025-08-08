@@ -716,11 +716,11 @@ ul.icons a {
 .footer-container a {
     color: inherit;
     font-style: italic;
-    font-weight: 300
+    font-weight: 300;
 }
 
 .page-content {
-    padding: 0
+    padding: 0;
 }
 
 .contact a {
@@ -809,6 +809,7 @@ p.quote {
     color: inherit;
     font-size: 1.4rem;
     line-height: 1.4;
+    max-width: 80%;
 }
 
 .github-project-card:hover {
