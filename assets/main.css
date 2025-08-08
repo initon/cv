@@ -204,7 +204,7 @@ body {
 }
 
 .container {
-    margin-top: 30px;
+    margin-top: 40px;
     max-width: 95%;
 }
 
@@ -703,22 +703,6 @@ ul.icons a {
     text-align: center
 }
 
-.footer-container {
-    margin-top: 30px
-}
-
-.footer-container p {
-    text-align: center;
-    font-style: italic;
-    font-weight: 300
-}
-
-.footer-container a {
-    color: inherit;
-    font-style: italic;
-    font-weight: 300;
-}
-
 .page-content {
     padding: 0;
 }
@@ -811,6 +795,8 @@ p.quote {
   font-size: 1.4rem;
   line-height: 1.4;
   max-width: 100%;
+  color: inherit;
+  font-weight: 300;
 }
 
 .github-project-card:hover {
@@ -830,6 +816,8 @@ p.quote {
   color: #555;
   margin-bottom: 0.7rem;
   min-height: 3em;
+  font-style: italic;
+  text-align: center;
 }
 
 .github-project-meta {
